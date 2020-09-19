@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+	<style type="text/css">
+		img{
+			padding: 5px;
+			border: 5px solid white;
+		}
+		.Slider{
+			display: flex;
+			position: relative;
+			top: 400px;
+
+		}
+				.pager{
+			position: relative;
+			
+			top: 400px;
+			color: black;
+		}
+			a {
+			position: relative;
+			top: 400px;
+  text-decoration: none;
+  font-size: 40px;
+
+  display: inline-block;
+  padding: 30px;
+  height: 40px;
+  width: 20px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  left: 5%;
+}
+
+.next {
+  background-color: #f1f1f1;
+  color: black;
+  position: relative;
+  left:  90%;
+}
+
+.round {
+  border-radius: 50%;
+}
+	</style>
+</head>
+<body>
+	<div class="Slider">
+		<div>
+			<img src="bg2.jpg" alt=" " />
+		</div>
+		<div>
+			<img src="bg2.jpg" alt=" " />
+		</div>
+         <div>
+			<img src="bg2.jpg" alt=" " />
+		</div>
+		<div>
+			<img src="bg2.jpg" alt=" " />
+		</div>
+		<div>
+			<img src="bg2.jpg" alt=" " />
+		</div>
+</div>
+
+
+  <a href="#" class="previous round">&#8249;</a>
+<a href="#" class="next round">&#8250;</a>
+<script type="text/javascript">
+$('.Slider').slick({
+  dots: true,
+	prevArrow: $('.previous'),
+	nextArrow: $('.next'),
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  Slider: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+});
+</script>
+</body>
+</html>

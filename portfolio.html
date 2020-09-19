@@ -1,0 +1,203 @@
+<html>
+
+
+<head>
+<title>Gallery</title>
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Monoton|Playfair+Display+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script|Tangerine&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+
+}
+
+
+.WebContainer{
+    width:100%;
+    min-width:1000px;
+    height:auto;
+} 
+.stevjo{width:6%;
+height:12%;
+position:relative;
+left:150px;
+top:10px;
+
+}
+
+
+a{
+position:relative;
+        left:10px;
+                height:27px;
+color:black;
+font-size: 45px;
+
+text-decoration:none;}
+a:hover{
+text-decoration:underline;
+color:black;}
+
+li {
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #24C2F2;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+}
+
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+ z-index: 1;
+}
+
+.dropdown-content a {
+  color: #24C2F2;
+
+  padding: 5px ;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+   
+img{
+height:30%;
+position:relative;
+left:10px;
+right:280px;
+top:150px;
+}
+.mySlides {
+margin: 2px;
+        height: 900px;
+        cursor: pointer;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    
+    }
+.scrolls { 
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height:1100px;
+		width:100%;
+	position: relative;
+       
+		right:10px;
+	
+    white-space:nowrap;
+    } 
+	.wrapper { 
+        
+       
+        margin: 1px; 
+        text-align: center; 
+        position: relative;
+        
+       
+        margin-bottom: 20px !important;
+        width: auto;
+		
+        padding-top: 20px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<ul>
+<div class="container">
+<img  class="stevjo" src="icons.png"></img>
+
+  <li><a href="about.html">Contact</a></li>
+  <li><a href="aboutt.html">About </a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Photography</a>
+    <div class="dropdown-content">
+      <a href="galleryy.html">Gallery</a>
+      <a href="photos.html">Landscape</a>
+      <a href="slideit.html">Portrait</a>
+	  <li><a href="Home.html">Home</a></li>
+    </div>
+  </li>
+</ul>
+
+<div class="wrapper">
+ <div class="scrolls">
+
+<div class="rows " style="max-width:1500px">
+<img class="mySlides" src="bg6.jpg">
+
+<img class="mySlides" src="img50.jpg">
+<img class="mySlides" src="img26.jpeg">
+<img class="mySlides" src="img27.jpeg">
+
+<img class="mySlides" src="img40.jpg">
+<img class="mySlides" src="img39.jpg">
+<img class="mySlides" src="img46.jpg">
+<img class="mySlides" src="img52.jpg">
+<img class="mySlides" src="img45.jpg">
+<img class="mySlides" src="img14.jpeg">
+<img class="mySlides" src="img41.jpg">
+<img class="mySlides" src="img18.jpeg">
+
+<img class="mySlides" src="img61.jpg">
+
+<img class="mySlides" src="img13.jpeg">
+<img class="mySlides" src="img8.jpg">
+<img class="mySlides" src="img35.jpg">
+
+	    
+  
+  
+  
+</div>
+</div>
+  
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+</div>
+
+</body>
+
+</html>
